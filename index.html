@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Sedona</title>
+    <!-- <base href="/assets/basic_intensive/demos/bshop/"> -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=latin,cyrillic">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="style.css" rel="stylesheet">
+  </head>
+  <body>
+    <header class="main-header active-header">
+      <nav class="main-navigation clearfix">
+        <ul class="left-menu">
+          <li>
+            <a href="#" class="active-header">Информация</a>
+          </li>
+          <li>
+            <a href="#">Фото и видео</a>
+          </li>
+        </ul>
+        <div class="logo">
+        <a href="index.html">
+            <img src="img/logo.png" width="138" height="70" alt="Логотип Sedona">
+          </a>
+        </div>
+        <ul class="right-menu">
+          <li>
+            <a href="text.html">Карта штата</a>
+          </li>
+          <li>
+            <a href="catalog.html">Гостиницы</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="main-features">
+      <div class="motto">
+        <h3>Седона - небольшой городок в Аризоне, заслуживающий большего!</h3>
+        <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+      </div>
+      <div class="feature-big-1">
+        <h3>Настоящий городок</h3>
+        <div class="number"><span>№1</span></div>
+        <p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
+      </div>
+      <div class="feature-small">
+        <img src="img/house.png" width="75" height="72" alt="Размещение">
+        <h3>Жилье</h3>
+        <p>Рекомендуем пожить в настоящем<br>мотеле, все как в в кино!</p>
+      </div>
+      <div class="feature-small">
+        <img src="img/burger.png" width="74" height="70" alt="Еда">
+        <h3>Еда</h3>
+        <p>Всегда заказывайте фирменный бургер,<br>вы не разочаруетесь!</p>
+      </div>
+      <div class="feature-small">
+        <img src="img/present.png" width="64" height="76" alt="Сувениры">
+        <h3>Сувениры</h3>
+        <p>Не только китайского, но и местного<br>производства!</p>
+      </div>
+      <div class="feature-big-2">
+        <h3>Там есть мост дьявола</h3>
+        <div class="number"><span>№2</span></div>
+        <p>Да, по нему можно пройти если конечно вы осмелитесь</p>
+      </div>
+      <div class="features-middle">
+        <div class="feature-middle">
+          <h3>Небольшая площадь</h3>
+          <div class="number"><span>№3</span></div>
+          <p>Все достопримечательности<br>находятся очень близко</p>
+        </div>
+        <div class="feature-middle">
+          <h3>Красивая<br>дорога</h3>
+          <div class="number"><span>№4</span></div>
+          <p>Ехать в Седону из Лас-Вегаса совсем<br>не скучно!</p>
+        </div>
+        <div class="feature-middle">
+          <h3>Мало<br>туристов</h3>
+          <div class="number"><span>№5</span></div>
+          <p>Большинство едет в Гранд Каньон и<br>толпится там</p>
+        </div>
+      </div>
+    </div>
+
+    <footer class="main-footer clearfix">
+      <h3>Заинтересовались?</h3>
+      <p>Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+      <div class="footer-map">
+
+      </div>
+      <div class="footer-socials">
+        <div class="footer-contacts">#visitsedona</div>
+        <div class="footer-social">
+          <a class="social-btn social-btn-tw" href="#">Твиттер</a>
+          <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+          <a class="social-btn social-btn-youtube" href="#">Ютуб</a>
+        </div>
+        <div class="footer-copyright">
+          <p>WEBSITE BY</p>
+          <a class="btn" href="https://htmlacademy.ru"><img src="img/logo-html.png"></a>
+        </div>
+      </div>
+    </footer>
+
+    <div class="modal-content">
+      <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+        <label class="check-in">ДАТА ЗАЕЗДА:<input class="date" type="text" name="check-in" placeholder="24 АПРЕЛЯ 2016"></label>
+        <label class="check-out">ДАТА ВЫЕЗДА:<input class="date" type="text" name="check-out" placeholder="4 ИЮЛЯ 2016"></label>
+        <label class="adults">ВЗРОСЛЫЕ:<input class="quantity" type="text" name="adults" placeholder="2"></label>
+        <label class="children">ДЕТИ:<input class="quantity" type="text" name="children" placeholder="0"></label>
+        <button class="btn" type="submit">НАЙТИ</button>
+      </form>
+    </div>
+    
+
+
+<!-- <div class="modal-content">
+      <form>
+        <p>Выберите дату: <input type="date" name="calendar" value="24 АПРЕЛЯ 2016">
+           <input type="submit" value="Отправить"></p>
+
+        <p>Выберите дату: <input type="date" name="calendar" value="4 ИЮЛЯ 2016">
+           <input type="submit" value=""></p>
+
+          <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
+          <h2 class="modal-content-title">Напишите нам</h2>
+          <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+            <label>Ваше имя:<input class="icon-user" type="text" name="login" placeholder="Представьтесь, пожалуйста"></label>
+            <label>Ваш e-mail:<input class="icon-user" type="email" name="email" placeholder="Для отправки ответа"></label>
+            <label>Текст письма:<textarea class="icon-user" name="message" placeholder="В свободной форме"></textarea></label>
+            <button class="btn" type="submit">НАЙТИ</button>
+          </form>
+        </div>
+ -->
+    <script src="popup.js"></script>
+  </body>
+</html>
+
+
+ 
