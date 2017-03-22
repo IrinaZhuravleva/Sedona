@@ -946,13 +946,13 @@ label.max-price {
 
 .modal-content {
   z-index: 2000;
+
   top: 50%;
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
   position: fixed;
   width: 510px;
   height: 397px;
-
   color: #000000;
   background: #fff;
   box-shadow: 0px 30px 50px rgba(0, 0, 0, 0.7);
@@ -979,8 +979,24 @@ label.max-price {
 
 .modal-content .btn {
   display: block;
-  margin: 0px auto;
   margin-top: 40px;
+  width: 463px;
+  height: 60px;
+  background-color: #81b3d2;
+  border: none;
+  outline: none;
+  color: white;
+  font-size: 21px;
+  font-weight: 700;
+}
+
+.modal-content .btn:hover {
+  background-color: #669ec0;
+}
+
+.modal-content .btn:active {
+  background-color: #5496bd;
+  color: #85b0cd;
 }
 
 .modal-content .date,
@@ -989,9 +1005,9 @@ label.max-price {
 }
 
 .modal-content .date {
-  width: 330px;
+  width: 326px;
+  height: 31px;
   margin-right: 48px;
-  height: 35px;
   margin-left: 30px;
   border: none;
   background-color: #f2f2f2;
@@ -1000,10 +1016,8 @@ label.max-price {
   font-size: 14px;
   letter-spacing: -1px;
   padding-left: 4px;
-
-  border: none;
   outline: none;
-
+  border: 2px solid #f2f2f2;
 }
 
  label.check-in,
@@ -1016,14 +1030,25 @@ label.max-price {
 
 label.check-in:after,
 label.check-out:after {
-  background: url("img/date.png") no-repeat;  /*ПОЧЕМУ НЕ ВИДНА КАРТИНКА?*/
+  background: url("img/date.png") no-repeat;
+  opacity: 0.3;  
   position: absolute;
   content: "";
-
   width: 22px;
   height: 22px;
   top: 8px;
   left: 427px;
+}
+
+label.check-in:hover:after,
+label.check-out:hover:after {
+  background: url("img/date.png") no-repeat;
+  opacity: 1;  
+}
+
+label.check-in:active:after,
+label.check-out:active:after {
+  background: url("img/date-1.png") no-repeat;
 }
 
 .modal-content .quantity {
@@ -1031,23 +1056,101 @@ label.check-out:after {
   font-size: 14px;
   padding-left: 50px;
   display: inline-block;
-  width: 60px;
   margin-left: 37px;
-  height: 31px;
+  width: 56px;
+  height: 27px;
   background-color: #f2f2f2;
-  border: none;
+  border: 2px solid #f2f2f2;
   outline: none;
   font-weight: 700;
+}
+
+label.adults,
+label.children {
   position: relative;
 }
 
-input.quantity:before {
+label.children {
+  margin-left: 49px;
+}
+
+label.adults:before {
   position: absolute;
-  content: "";
-  top: 10px;
-  left: 10px;
-  background-color: red;
+  content: "-";
+  top: -5px;
+  left: 130px;
+  background-color: transparent;
   width: 20px;
   height: 20px;
+  z-index: 1000;
+  font-size: 24px;
+  color: #a9a9a9;
+}
 
+
+label.children:before {
+  position: absolute;
+  content: "-";
+  top: -5px;
+  left: 86px;
+  background-color: transparent;
+  width: 20px;
+  height: 20px;
+  z-index: 1000;
+  font-size: 24px;
+  color: #a9a9a9;
+}
+
+label.adults:after{
+  position: absolute;
+  content: "+";
+  top: -5px;
+  left: 196px;
+  background-color: transparent;
+  width: 20px;
+  height: 20px;
+  z-index: 1000;
+  font-size: 24px;
+  color: #a9a9a9;
+}
+
+label.children:after {
+  position: absolute;
+  content: "+";
+  top: -5px;
+  left: 159px;
+  background-color: transparent;
+  width: 20px;
+  height: 20px;
+  z-index: 1000;
+  font-size: 24px;
+  color: #a9a9a9;
+}
+
+label.adults:hover:before,
+label.adults:hover:after, 
+label.children:hover:before,
+label.children:hover:after  {
+  color: black;
+}
+
+label.adults:active:before,
+label.adults:active:after, 
+label.children:active:before,
+label.children:active:after  {
+  color: #81b3d2;
+}
+
+.modal-content input {
+  border: 2px solid #f2f2f2;
+}
+
+.modal-content input:hover {
+  border: 2px solid #ebebeb;
+  background-color: #ebebeb;
+}
+
+.modal-content input:active {
+  border: 2px solid #e5e5e5;
+  background-color: white;
 }
