@@ -85,7 +85,7 @@
     </div>
 
     <footer class="main-footer clearfix">
-      <h3>Заинтересовались?</h3>
+    <a class="btn-contacts" href="#"><h3>Заинтересовались?</h3></a>
       <p>Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
       <div class="footer-map">
 
@@ -116,27 +116,51 @@
       </form>
     </div>
 
+  <script>
+        var link = document.querySelector(".btn-contacts");
+  var popup = document.querySelector(".modal-content");
+  var close = popup.querySelector(".modal-content-close"); 
+  // чет не пойму, как закрывать это дело)))
+  // 
+  // var form = popup.querySelector("form");
+  // var login = popup.querySelector("[name=login]");
+  // var email = popup.querySelector("[name=email]");
+  // var storage = localStorage.getItem("login");
 
+  link.addEventListener("click", function(event) {
+    event.preventDefault();
+    popup.classList.add("modal-content-show");
+    if (storage) {
+      login.value = storage;
+      email.focus();
+    } else { 
+      login.focus();
+    }
+  });
 
-<!-- <div class="modal-content">
-      <form>
-        <p>Выберите дату: <input type="date" name="calendar" value="24 АПРЕЛЯ 2016">
-           <input type="submit" value="Отправить"></p>
+  close.addEventListener("click", function(event) {
+    event.preventDefault();
+    popup.classList.remove("modal-content-show");
+  });
 
-        <p>Выберите дату: <input type="date" name="calendar" value="4 ИЮЛЯ 2016">
-           <input type="submit" value=""></p>
+  // form.addEventListener("submit", function(event) {
+  //   if (!login.value || !email.value) {
+  //     event.preventDefault();
+  //     console.log("Нужно ввести логин и e-mail");
+  //   } else {
+  //     localStorage.setItem("login", login.value);
+  //   }
+  // });
 
-          <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
-          <h2 class="modal-content-title">Напишите нам</h2>
-          <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
-            <label>Ваше имя:<input class="icon-user" type="text" name="login" placeholder="Представьтесь, пожалуйста"></label>
-            <label>Ваш e-mail:<input class="icon-user" type="email" name="email" placeholder="Для отправки ответа"></label>
-            <label>Текст письма:<textarea class="icon-user" name="message" placeholder="В свободной форме"></textarea></label>
-            <button class="btn" type="submit">НАЙТИ</button>
-          </form>
-        </div>
- -->
-    <script src="popup.js"></script>
+    window.addEventListener("keydown", function(event) {
+    if (event.keyCode === 27) {
+      if (popup.classList.contains("modal-content-show")) {
+        popup.classList.remove("modal-content-show");
+      }
+    }
+  });
+
+    </script>
   </body>
 </html>
 

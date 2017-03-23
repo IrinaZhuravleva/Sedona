@@ -4,10 +4,8 @@ body {
   color: #000;
   font-family: PTSans, Arial, sans-serif;
   background-color: #f2f2f2;
-  width: 1200px;
+  width: 768px;
   margin: 0 auto;
-  box-shadow: -5px 0 15px #dedede,
-  5px 0 15px #dedede;
 }
 
 h2 {
@@ -302,7 +300,6 @@ h3 {
 .feature-big-2 .number {
   padding-left: 850px;
   color: white;
-  /*display: block;*/
   text-align: center;
   font-size: 14px;
   line-height: 21px;
@@ -526,12 +523,9 @@ h3 {
   position: relative;
 }
 
-/* Всплывающая форма */
-
 .features {
   background-image: url("img/filter-background.png");
   background-repeat: no-repeat;
-  /*height: 217px;*/
 }
 
 .features h3 {
@@ -745,16 +739,11 @@ label.max-price {
   padding-left: 45px;
 }
 
-/*.sort-tools {
-  display: inline-block;
-}*/
-
 .sort-links {
   line-height: 18px;
   font-size: 12px;
   padding: 0px;
   padding-top: 27px;
- /* float: left;*/
   display: inline-block;
   width: 775px;
 }
@@ -944,17 +933,18 @@ label.max-price {
   padding-bottom: 31px;
 }
 
- a.btn-contacts {
-  text-decoration: none;
-}
-
 .modal-content {
   z-index: 2000;
-  display: none;
+    /*display: none;
+
+
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);*/
+
   position: fixed;
-  top: 50%; 
-  left: 50%; 
-  transform: translateX(-50%) translateY(-50%);
+  top: 25%;
+  left: 29.6%;
   width: 510px;
   height: 397px;
   color: #000000;
@@ -964,10 +954,6 @@ label.max-price {
   font-weight: 700;
   padding-left: 57px;
   letter-spacing: -1px;
-}
-
-.modal-content-show {
-  display: block;
 }
 
 .modal-content:before {
@@ -1094,7 +1080,6 @@ label.adults:before {
   font-size: 24px;
   color: #a9a9a9;
 }
-
 
 label.children:before {
   position: absolute;
