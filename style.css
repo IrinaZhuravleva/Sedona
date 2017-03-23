@@ -946,16 +946,11 @@ label.max-price {
 
 .modal-content {
   z-index: 2000;
-    /*display: none;
 
-
-  -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);*/
-
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
   position: fixed;
-  top: 25%;
-  left: 29.6%;
   width: 510px;
   height: 397px;
   color: #000000;
