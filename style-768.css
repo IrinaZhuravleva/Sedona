@@ -4,10 +4,8 @@ body {
   color: #000;
   font-family: PTSans, Arial, sans-serif;
   background-color: #f2f2f2;
-  width: 1200px;
+  width: 768px;
   margin: 0 auto;
-  box-shadow: -5px 0 15px #dedede,
-  5px 0 15px #dedede;
 }
 
 h2 {
@@ -45,10 +43,12 @@ h3 {
 }
 
 .logo {
-  position: absolute; 
+  position: absolute; /*а где блок с position: relative;?*/
   top: 0px;
   left: 50%;
   transform: translateX(-50%);
+
+ /* а почему нельзя margin: 0 auto ?*/
 }
 
 .logo a {
@@ -300,7 +300,6 @@ h3 {
 .feature-big-2 .number {
   padding-left: 850px;
   color: white;
-  /*display: block;*/
   text-align: center;
   font-size: 14px;
   line-height: 21px;
@@ -524,12 +523,9 @@ h3 {
   position: relative;
 }
 
-/* Всплывающая форма */
-
 .features {
   background-image: url("img/filter-background.png");
   background-repeat: no-repeat;
-  /*height: 217px;*/
 }
 
 .features h3 {
@@ -894,6 +890,7 @@ label.max-price {
   background-color: #669ec0;
 }
 
+
 .description a:active {
   background-color: #5496bd;
   color: rgba(250,250,250,0.3);
@@ -936,24 +933,18 @@ label.max-price {
   padding-bottom: 31px;
 }
 
- a.btn-contacts {
-  text-decoration: none;
-}
-
 .modal-content {
- 
+  z-index: 2000;
+    /*display: none;
 
-  display: none;
-  
-}
 
-.modal-content-show {
-  display: block;
-position: fixed;
-  top: 50%; 
-  left: 50%; 
-  transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);*/
 
+  position: fixed;
+  top: 25%;
+  left: 29.6%;
   width: 510px;
   height: 397px;
   color: #000000;
@@ -963,10 +954,9 @@ position: fixed;
   font-weight: 700;
   padding-left: 57px;
   letter-spacing: -1px;
-   z-index: 2000;
 }
 
-.modal-content-show:before {
+.modal-content:before {
   height: 57px;
   width: 568px;
   background-color: #766357;
@@ -1090,7 +1080,6 @@ label.adults:before {
   font-size: 24px;
   color: #a9a9a9;
 }
-
 
 label.children:before {
   position: absolute;

@@ -4,10 +4,10 @@ body {
   color: #000;
   font-family: PTSans, Arial, sans-serif;
   background-color: #f2f2f2;
-  width: 1200px;
+  width: 768px;
   margin: 0 auto;
-  box-shadow: -5px 0 15px #dedede,
-  5px 0 15px #dedede;
+ /* box-shadow: -5px 0 15px #dedede,
+  5px 0 15px #dedede;*/
 }
 
 h2 {
@@ -34,7 +34,7 @@ h3 {
 
 .main-header {
   background-color: white;
-  background-image: url("img/commercial.png");
+  background-image: url("img/intro.png");
   background-repeat: no-repeat;
   background-position: center;
   min-height: 565px;
@@ -45,16 +45,10 @@ h3 {
 }
 
 .logo {
-  position: absolute; 
-  top: 0px;
-  left: 50%;
-  transform: translateX(-50%);
+  position: absolute;
+  transform: translateX(228%);
 }
 
-.logo a {
-  display: block; /*не работает почему-то*/
-  text-align: center;
-}
 
 .main-navigation {
   background-color: white;
@@ -69,21 +63,17 @@ h3 {
 }
 
 .left-menu li:first-child {
-  padding-left: 70px;
-}
-
-.left-menu li:last-child {
-  padding-left: 148px;
-}
-
-.right-menu li:last-child {
-  padding-left: 160px;
+  padding-left: 44px;
+  padding-right: 25px;
 }
 
 .right-menu li:first-child {
-  padding-left: 127px;
+  padding-left: 25px;
 }
 
+.right-menu li:last-child {
+  padding-left: 75px;
+}
 .left-menu {
   float: left;
 }
@@ -136,7 +126,7 @@ h3 {
 }
 
 .main-features {
-  width: 1200px;
+  width: 768px;
   margin: 0 auto;
   background-color: white;
 }
@@ -144,7 +134,6 @@ h3 {
 .motto h3 {
   font-size: 19px;
   line-height: 26px;
-  letter-spacing: -0.5px;
   margin: 0 auto;
   padding-top: 59px;
   text-align: center;
@@ -156,8 +145,8 @@ h3 {
 .motto p {
   text-transform: uppercase;
   font-size: 14px;
-  padding-left: 355px;
-  padding-top: 12px;
+  padding-left: 138px;
+  padding-top: 14px;
   letter-spacing: -0.8px;
   margin-bottom: 54px;
 }
@@ -187,32 +176,26 @@ h3 {
 
 .feature-big-1 {
   text-transform: uppercase;
-  background-image: url("img/hotel.png");
+  background-image: url("img/2-layers.png");
   background-repeat: no-repeat;
-  background-position: right;
-  background-color: #81b3d2;
   color: white;
   min-height: 256px;
 }
 
 .feature-big-1 h3 {
-  padding-left: 128px;
+  padding-left: 56px;
   color: white;
-  font-weight: bold;
   width: 140px;
   display: block;
   text-align: center;
-  font-size: 21px;
-  padding-top: 53px;
-  letter-spacing: -2px;
+  font-size: 19px;
+  padding-top: 46px;
   line-height: 22px;
 }
 
 .feature-big-1 .number {
-  padding-left: 62px;
   color: white;
-  width: 276px;
-  /*display: block;*/
+  width: 252px;
   text-align: center;
   font-size: 14px;
   line-height: 21px;
@@ -221,7 +204,7 @@ h3 {
 }
 
 .feature-big-1 .number::after {
-  left: 112px;
+  left: 101px;
 }
 
 .feature-big-1 .number span {
@@ -229,9 +212,9 @@ h3 {
 }
 
 .feature-big-1 p {
-  padding-left: 62px;
+  padding-left: 24px;
   color: white;
-  width: 276px;
+  width: 202px;
   display: block;
   text-align: center;
   font-size: 14px;
@@ -242,19 +225,27 @@ h3 {
 
 .feature-small {
   display: inline-block;
-  width: 397px;
+  width: 253px;
   text-align: center;
   text-transform: uppercase;
   vertical-align: top;
-  margin-top: 46px;
+  margin-top: 123px;
+  position: relative;
+}
+
+.feature-small img {
+  display: block;
+    position: absolute;
+    content: "";
+    left: 90px;
+    bottom: 152px;
 }
 
 .feature-small h3 {
-  font-weight: bold;
   font-size: 21px;
   margin: 0;
   letter-spacing: -2px;
-  padding-top: 22px;
+  padding-top: 18px;
 }
 
 .feature-small .number {
@@ -266,48 +257,49 @@ h3 {
 }
 
 .feature-small p {
+  display: block;
+  width: 166px;
   font-size: 14px;
   line-height: 21px;
   padding-top: 5px;
-  padding-left: 1px;
+  padding-left: 45px;
   letter-spacing: -1px;
+  padding-right: 60px;
 }
 
 .feature-big-2 {
-  margin-top: 58px;
+  margin-top: 47px;
   text-transform: uppercase;
-  background-image: url("img/layer-5.png");
+  background-image: url("img/bridge-768.png");
   background-repeat: no-repeat;
-  background-position: left;
-  background-color: #81b3d2;
-  color: white;
   min-height: 255px;
 }
 
+.feature-big-2.content {
+
+
+}
+
 .feature-big-2 h3 {
-  padding-left: 923px;
+  padding-left: 561px;
+  padding-top: 49px;
   color: white;
-  font-weight: bold;
-  width: 160px;
-  display: block;
   text-align: center;
-  font-size: 21px;
-  padding-top: 55px;
-  letter-spacing: -1px;
-  line-height: 21px;
+  width: 155px;
+  display: block;
+  font-size: 19px;
+  line-height: 20px;
 }
 
 .feature-big-2 .number {
-  padding-left: 850px;
+  padding-left: 489px;
   color: white;
-  /*display: block;*/
-  text-align: center;
   font-size: 14px;
   line-height: 21px;
   letter-spacing: -0.7px;
   width: 302px;
   padding-bottom: 4px;
-  padding-top: 3px;
+  padding-top: 5px;
 }
 
 .feature-big-2 .number::after {
@@ -319,20 +311,20 @@ h3 {
 }
 
 .feature-big-2 p {
-  padding-left: 850px;
+  padding-left: 558px;
   color: white;
   display: block;
   text-align: center;
   font-size: 14px;
-  line-height: 21px;
-  letter-spacing: -0.7px;
-  width: 302px;
+  line-height: 20px;
+  letter-spacing: -1px;
+  width: 162px;
   padding-bottom: 4px;
   padding-top: 3px;
 }
 
 .features-middle {
-  background-color: #eeeeee;
+  
   font-size: 0;
   height: 255px;
   margin-top: -14px;
@@ -340,43 +332,47 @@ h3 {
 
 .feature-middle {
   display: inline-block;
-  width: 397px;
-  text-align: center;
-  text-transform: uppercase;
-  vertical-align: top;
-  background-color: #eeeeee;
+    width: 256px;
+    text-align: center;
+    text-transform: uppercase;
+    vertical-align: top;
+    background-color: #eeeeee;
 }
 
 .feature-middle h3 {
   font-size: 21px;
   margin: 0;
   letter-spacing: -2px;
-  padding-top: 22px;
   width: 214px;
-  line-height: 21px;
-  padding-left: 92px;
-  padding-top: 47px;
+  line-height: 20px;
+  padding-left: 19px;
+  padding-top: 49px;
 }
 
 .feature-middle .number {
   font-size: 14px;
   line-height: 21px;
-  padding-top: 23px;
-  padding-left: 1px;
+  padding-top: 25px;
   letter-spacing: -1px;
 }
+
+.feature-middle .number:after {
+  border-bottom-color: grey;
+}
+
 
 .feature-middle .number span {
   background-color: #eeeeee;
 }
 
 .feature-middle p {
+  width: 211px;
   font-size: 14px;
-  line-height: 21px;
-  padding-top: 5px;
-  padding-left: 1px;
-  letter-spacing: -1px;
-  padding-bottom: 4px;
+    line-height: 20px;
+    padding-top: 2px;
+    padding-left: 24px;
+    letter-spacing: -0.7px;
+    padding-bottom: 5px;
 }
 
 
@@ -394,7 +390,6 @@ h3 {
   text-transform: uppercase;
   letter-spacing: -3px;
   text-align: center;
-  margin-top: -2px;
   font-size: 30px;
   line-height: 24px;
 }
@@ -404,28 +399,29 @@ h3 {
   font-size: 14px;
   letter-spacing: -0.8px;
   text-align: center;
-  width: 440px;
+  width: 441px;
   margin: 0 auto;
   padding-top: 28px;
 }
 
 .footer-map {
-  background: url("img/map.png") center;
+  background-image: url("img/map.png");
   background-color: #eeeeee;
-  min-height: 472px;
-  /*overflow: hidden;*/
-  margin-top: 194px;
+  height: 472px;
+  width: 768px;
+  overflow: hidden;
+  margin-top: 133px;
 }
 
 .footer-contacts {
   float: left;
-  width: 373px;
-  text-transform: uppercase;
-  padding-top: 45px;
-  font-weight: bold;
-  font-size: 21px;
-  letter-spacing: -1.7px;
-  padding-left: 134px;
+    width: 227px;
+    text-transform: uppercase;
+    padding-top: 48px;
+    /* font-weight: bold; */
+    font-size: 21px;
+    letter-spacing: -1.7px;
+    padding-left: 61px;
 }
 
 .footer-contacts a {
@@ -440,6 +436,7 @@ h3 {
   float: left;
   width: 186px;
   text-align: center;
+  margin-top: 2px;
 }
 
 .footer-social p { /*что это?*/
@@ -473,7 +470,7 @@ h3 {
   display: block;
   content: " ";
   position: absolute;
-  top: 17px;
+  top: 16px;
   left: 14px;
   background: url(img/sprite.png) no-repeat -8px -216px;
   width: 20px;
@@ -484,7 +481,7 @@ h3 {
   display: block;
   content: " ";
   position: absolute;
-  top: 12px;
+  top: 10px;
   left: 17px;
   background: url("img/sprite.png") no-repeat -8px -175px;
   width: 12px;
@@ -495,19 +492,19 @@ h3 {
   display: block;
   content: " ";
   position: absolute;
-  top: 16px;
-  left: 12px;
-  background: url(img/sprite.png) no-repeat -8px -251px;
+  top: 15px;
+    left: 13px;
+  background: url("img/sprite.png") no-repeat -8px -251px;
   width: 20px;
   height: 22px;
 }
 
 .footer-copyright {
   float: right;
-  max-width: 350px;
-  margin-right: 102px;
-  margin-top: 40px;
-  position: relative;
+    max-width: 350px;
+    margin-right: 32px;
+    margin-top: 42px;
+    position: relative;
 }
 
 .footer-copyright p{
@@ -517,29 +514,28 @@ h3 {
   width: 81px;
   position: absolute;
   left: -85px;
-  top: -20px;
+  top: -22px;
  }
 
 .footer-copyright .btn {
   position: relative;
 }
 
-/* Всплывающая форма */
-
 .features {
   background-image: url("img/filter-background.png");
   background-repeat: no-repeat;
-  /*height: 217px;*/
+  height: 217px;
+  display: block;
 }
 
 .features h3 {
-  color: white;
-  padding-top: 6px;
+  padding-top: 8px;
   padding-left: 20px;
   text-transform: uppercase;
-  letter-spacing: -2px;
-  padding-bottom: 2px;
+  letter-spacing: -1px;
+  padding-bottom: 4px;
   color: white;
+  font-size: 16px;
 }
 
 .infrastructure,
@@ -548,26 +544,30 @@ h3 {
 }
 
 .infrastructure {
-  margin-left: 50px;
+  margin-left: 25px;
 }
 
 .accommodation {
-  margin-left: 96px;
+  margin-left: 85px;
 }
 
 .infrastructure ul,
 .accommodation ul {
   list-style: none;
+  letter-spacing: -1px;
+  margin-bottom: 0px;
+  font-weight: 400; 
 }
 
 .infrastructure li,
 .accommodation li {
   padding-bottom: 24px;
+  font-weight: 400;  /*doesn't work*/
 }
 
 .filter-range {
   float: right;
-  margin-right: 72px;
+  width: 300px;
 }
 
 .content-col-left input[type=checkbox] {
@@ -616,7 +616,7 @@ h3 {
   text-transform: uppercase;
   color: white;
   padding-top: 27px;
-  padding-left: 10px;
+  padding-left: 33px;
   letter-spacing: -1px;
 }
 
@@ -627,11 +627,12 @@ h3 {
   vertical-align: middle;
   border: 2px solid white;
   border-radius: 3px;
-  padding: 9px 32px;
+  padding: 9px 34px;
   color: white;
   background-color: transparent;
   margin-top: 32px;
-  margin-left: 106px;
+  margin-left: 73px;
+  font-size: 12px;
 }
 
 .btn-transparent:hover {
@@ -639,40 +640,39 @@ h3 {
   color: #000;
 }
 
-
 .price-controls {
   border: 2px solid white;
   border-radius: 3px;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  padding-top: 4px;
+  padding-bottom: 4px;
   color: white;
   margin-top: 7px;
-  margin-left: 21px;
-  width: 314px;
+  width: 219px;
+  margin-left: 30px;
 }
 
 .price-controls input {
   background-color: transparent;
   color: white;
-  width: 65px;
+  width: 41px;
   border: 0px;
 }
 
 label.min-price {
-  padding-left: 65px;
-  padding-right: 4px;
+ padding-left: 41px;
 }
 
 label.max-price {
   border-left: 2px solid white;
-  padding-left: 51px;
+  padding-left: 30px;
 }
 
 .range-controls {
   position: relative;
   padding-top: 19px;
-  padding-left: 31px;
   background: transparent;
+  width: 198px;
+  margin-left: 55px;
 }
 
 .range-controls .scale {
@@ -681,7 +681,7 @@ label.max-price {
 }
 
 .range-controls .bar {
-  width: 83%;
+  width: 80%;
   height: 2px;
   background: white;
 }
@@ -702,40 +702,44 @@ label.max-price {
 }
 
 .range-controls .range-toggle-min {
-  left: 22px;
+  left: -21px;
 }
 
 .range-controls .range-toggle-max {
-  left: 274px;
+  left: 135px;
 }
 
 .main-part {
   background-color: #fefefe;
+  display: block;
+  padding-top: 8px;   
+}
+
+.sorting h2 {
+  line-height: 24px;
+  text-transform: uppercase;
+  font-size: 20px;
+  display: inline-block;
+  padding-left: 43px;
+  letter-spacing: -1px;
+  font-weight: bold;
+  margin-top: 23px;
+  display: inline-block;
+}
+
+.quantity {
+  font-weight: bold;
+  line-height: 26px;
+  font-size: 20px;
+  display: inline-block;
 }
 
 .sort {
   display: inline-block;
 }
 
-.sorting h2 {
-  line-height: 26px;
-  text-transform: uppercase;
-  font-size: 20px;
-  display: inline-block;
-  margin-left: 71px;
-  letter-spacing: -1px;
-  margin-top: 23px;
-  display: inline-block;
-}
-
-.quantity {
-  line-height: 26px;
-  font-size: 20px;
-  padding-left: 5px;
-  display: inline-block;
-}
-
 .sort h2 {
+  font-weight: 400;
   line-height: 18px;
   font-size: 12px;
   margin: 0px;
@@ -745,11 +749,9 @@ label.max-price {
 
 .sort-links {
   line-height: 18px;
-  font-size: 12px;
-  padding: 0px;
-  padding-top: 27px;
+  font-size: 14px;
+  margin-left: 38px;
   display: inline-block;
-  width: 775px;
 }
 
 .sort-links .selected {
@@ -758,10 +760,10 @@ label.max-price {
 }
 
 .sort-links a {
-  margin-left: 35px;
+  margin-right: 33px;
   text-decoration: none;
   line-height: 18px;
-  font-size: 12px;
+  font-size: 10px;
   color: #cacaca;
   border-bottom: 1px dashed #81b3d2;
 }
@@ -777,6 +779,7 @@ label.max-price {
 
 .sort-arrows {
   display: inline-block;
+  margin-left: 91px;
 }
 
 .sort-arrows button {
@@ -843,24 +846,25 @@ label.max-price {
 
 .info-hotel {
   border-top: 1px solid #e5e5e5;
-  margin-top: 15px;
+  margin-top: 17px;
 }
 
 .photo {
-  margin-left: 73px;
-  padding-top: 28px;
+  margin-left: 45px;
+  padding-top: 30px;
 }
 
 .description {
   width: 283px;
-  margin-left: 30px;
+  margin-left: 32px;
   padding-top: 3px;
 }
 
 .description h3 {
+  font-size: 20px;
   margin-bottom: 2px;
-  padding-bottom: 0px;
   font-weight: 600;
+  letter-spacing: -1px;
 }
 
 .description h3:hover {
@@ -894,6 +898,7 @@ label.max-price {
   background-color: #669ec0;
 }
 
+
 .description a:active {
   background-color: #5496bd;
   color: rgba(250,250,250,0.3);
@@ -919,41 +924,48 @@ label.max-price {
   color: rgba(250,250,250,0.3);
 }
 
+.rate {
+  margin-right: 46px;
+}
+
 .rate p {
   font-size: 12px;
   background-color: #f3f3f3;
   width: 110px;
   height: 27px;
   color: #656565;
-  margin-right: 71px;
   text-align: center;
 }
 
 .rate img {
-  margin-right: 71px;
-  margin-right: 71px;
-  padding-top: 27px;
-  padding-bottom: 31px;
+  padding-top: 29px;
+  padding-bottom: 29px;
 }
 
  a.btn-contacts {
   text-decoration: none;
 }
 
-.modal-content {
- 
-
-  display: none;
-  
+.main-part .info-hotel:last-child {
+  border-bottom: 1px solid #e5e5e5;
+  padding-bottom: 17px;
 }
 
-.modal-content-show {
-  display: block;
-position: fixed;
+.catalog-footer {
+  padding-top: 0px;
+}
+
+.modal-content {
+  z-index: 2000;
+  display: none;
+  position: fixed;
   top: 50%; 
   left: 50%; 
   transform: translateX(-50%) translateY(-50%);
-
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  position: fixed;
   width: 510px;
   height: 397px;
   color: #000000;
@@ -963,10 +975,13 @@ position: fixed;
   font-weight: 700;
   padding-left: 57px;
   letter-spacing: -1px;
-   z-index: 2000;
 }
 
-.modal-content-show:before {
+.modal-content-show {
+  display: block;
+}
+
+.modal-content:before {
   height: 57px;
   width: 568px;
   background-color: #766357;
