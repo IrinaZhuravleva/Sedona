@@ -40,7 +40,7 @@
         <h3>Седона - небольшой городок в Аризоне, заслуживающий большего!</h3>
         <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
       </div>
-      <div class="feature-big-1">
+      <div class="feature-big-1 content">
         <h3>Настоящий городок</h3>
         <div class="number"><span>№1</span></div>
         <p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
@@ -48,7 +48,7 @@
       <div class="feature-small">
         <img src="img/house.png" width="75" height="72" alt="Размещение">
         <h3>Жилье</h3>
-        <p>Рекомендуем пожить в настоящем<br>мотеле, все как в в кино!</p>
+        <p>Рекомендуем пожить в настоящем мотеле, все как в в кино!</p>
       </div>
       <div class="feature-small">
         <img src="img/burger.png" width="74" height="70" alt="Еда">
@@ -58,9 +58,9 @@
       <div class="feature-small">
         <img src="img/present.png" width="64" height="76" alt="Сувениры">
         <h3>Сувениры</h3>
-        <p>Не только китайского, но и местного<br>производства!</p>
+        <p>Не только китайского, но и местного производства!</p>
       </div>
-      <div class="feature-big-2">
+      <div class="feature-big-2 content">
         <h3>Там есть мост дьявола</h3>
         <div class="number"><span>№2</span></div>
         <p>Да, по нему можно пройти если конечно вы осмелитесь</p>
@@ -69,17 +69,17 @@
         <div class="feature-middle">
           <h3>Небольшая площадь</h3>
           <div class="number"><span>№3</span></div>
-          <p>Все достопримечательности<br>находятся очень близко</p>
+          <p>Все достопримеча-тельности находятся очень близко</p>
         </div>
         <div class="feature-middle">
           <h3>Красивая<br>дорога</h3>
           <div class="number"><span>№4</span></div>
-          <p>Ехать в Седону из Лас-Вегаса совсем<br>не скучно!</p>
+          <p>Ехать в Седону из Лас-<br>Вегаса совсем<br>не скучно!</p>
         </div>
         <div class="feature-middle">
           <h3>Мало<br>туристов</h3>
           <div class="number"><span>№5</span></div>
-          <p>Большинство едет в Гранд Каньон и<br>толпится там</p>
+          <p>Большинство едет в<br>Гранд Каньон и<br>толпится там</p>
         </div>
       </div>
     </div>
@@ -115,7 +115,38 @@
         <button class="btn" type="submit">НАЙТИ</button>
       </form>
     </div>
-       <script src="popup.js"></script>
+
+  <script>
+        var link = document.querySelector(".btn-contacts");
+  var popup = document.querySelector(".modal-content");
+  var close = popup.querySelector(".modal-content-close"); 
+  
+
+  link.addEventListener("click", function(event) {
+    event.preventDefault();
+    popup.classList.add("modal-content-show");
+    if (storage) {
+      login.value = storage;
+      email.focus();
+    } else { 
+      login.focus();
+    }
+  });
+
+  close.addEventListener("click", function(event) {
+    event.preventDefault();
+    popup.classList.remove("modal-content-show");
+  });
+
+    window.addEventListener("keydown", function(event) {
+    if (event.keyCode === 27) {
+      if (popup.classList.contains("modal-content-show")) {
+        popup.classList.remove("modal-content-show");
+      }
+    }
+  });
+
+    </script>
   </body>
 </html>
 
